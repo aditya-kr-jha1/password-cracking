@@ -1,6 +1,6 @@
 # Password Cracking and Hashing Algorithms
 
-## 📌 Overview
+##  Overview
 This project demonstrates the fundamentals of **password hashing and password cracking techniques** using industry-standard tools.  
 The objective is to understand how weak passwords can be compromised and why strong hashing and security practices are essential.
 
@@ -8,7 +8,7 @@ This is a **learning-oriented cybersecurity project** created for educational an
 
 ---
 
-## 🎯 Objectives
+##  Objectives
 - Understand how password hashing works
 - Learn different password cracking techniques
 - Use professional tools like **Hashcat**
@@ -17,7 +17,7 @@ This is a **learning-oriented cybersecurity project** created for educational an
 
 ---
 
-## 🛠️ Tools & Technologies Used
+##  Tools & Technologies Used
 - **Hashcat** (Password recovery tool)
 - **Wordlists** (for dictionary attacks)
 - **Windows OS**
@@ -26,7 +26,7 @@ This is a **learning-oriented cybersecurity project** created for educational an
 
 ---
 
-## 🔍 Hashing Algorithms Covered
+##  Hashing Algorithms Covered
 - MD5  
 - SHA-1  
 - SHA-256  
@@ -35,15 +35,15 @@ This is a **learning-oriented cybersecurity project** created for educational an
 
 ---
 
-## ⚙️ Password Cracking Techniques
+##  Password Cracking Techniques
 - **Dictionary Attack**
 - **Brute-Force Attack** (conceptual understanding)
 
 ---
 
-## 🚀 Setup & Installation
+##  Setup & Installation
 
-### 1️⃣ Clone the Repository
+###  Clone the Repository
 ```bash
 git clone https://github.com/aditya-kr-jha1/password-cracking.git
 cd password-cracking
