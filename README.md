@@ -31,21 +31,18 @@ password-cracking/
 All passwords and hashes in this repository are dummy and self-created, not real user data.
 
  How It Works
-1️⃣ Generate a Hash (Example)
+1️. Generate a Hash (Example)
 
 Example password:
-
 india123
-
 
 Its MD5 hash:
 
 8d763385e0476c5f29c6b4e45d2d8f8d
-
-
 Stored in hash.txt
 
-2️⃣ Prepare Wordlist
+
+2️. Prepare Wordlist
 
 wordlist.txt contains possible password guesses, for example:
 
@@ -55,7 +52,8 @@ password
 admin
 123456
 
-3️ Run Hashcat Command
+
+3️. Run Hashcat Command
 hashcat -m 0 -a 0 hash.txt wordlist.txt
 
 
@@ -65,21 +63,16 @@ Where:
 
 -a 0 → Dictionary attack
 
-4️ Show Cracked Password
+
+4️. Show Cracked Password
 hashcat -m 0 --show hash.txt
 
  Learning Outcomes
-
 Difference between plain text passwords and hashed passwords
-
 Why weak passwords are dangerous
-
 Importance of strong password policies
-
 Ethical use of cybersecurity tools
-
- Ethical Disclaimer
-
+Ethical Disclaimer
 This repository is intended only for learning and academic purposes.
 
 ❌ Do NOT:
@@ -88,12 +81,8 @@ Attack live systems
 Use this knowledge for illegal activities
 Always practice ethical hacking with permission.
 
-👤 Author
+ Author
 
 Aditya Kumar Jha
 Cybersecurity & Computer Science Learner
-📍 India
-
-⭐ Final Note
-
-If you are a beginner in cybersecurity, this project will help you understand how password security works in real life — responsibly and legally.
+India
