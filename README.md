@@ -1,38 +1,99 @@
-# Password Cracking and Hashing Algorithms  
-*(Educational Cybersecurity Project)*
+Password Cracking (Educational Project)
 
-## Overview
-This project demonstrates how weak passwords can be compromised when password hashes are exposed, and why secure hashing practices are essential.  
-The project is strictly **educational** and performed in a **controlled environment** using self-generated data.
+Overview
+This repository is an educational project created to understand how password hashing and cracking work using Hashcat.
+It demonstrates dictionary-based attacks on sample password hashes in a legal and ethical learning environment.
 
----
+This project is strictly for educational purposes only.
+Do NOT use these techniques on real systems or passwords without explicit permission.
 
-## Objective
-- To understand how passwords are stored using hashing algorithms  
-- To demonstrate dictionary and brute-force (mask) attacks on weak password hashes  
-- To analyze the importance of strong passwords and secure hashing  
+Objectives
+Understand what password hashes are
+Learn how dictionary attacks work
+Use Hashcat to crack self-generated sample hashes
+Practice basic cybersecurity concepts responsibly
 
----
+Tools Used
+Hashcat (Password recovery tool)
+Windows PowerShell / Command Prompt
+MD5 hash algorithm (for demonstration)
 
-## Tool Used
-### Hashcat  
-Hashcat is used as an external password-cracking tool for performing offline attacks on hashed passwords.
+ Repository Structure
+password-cracking/
+│
+├── README.md          → Project documentation
+├── hash.txt           → Contains sample password hash
+├── wordlist.txt       → Dictionary used for cracking
+├── password.txt       → Dummy passwords (for learning only)
 
-> Hashcat is **not included** in this repository.  
-> Users must install Hashcat separately from the official website.
 
----
+ Note:
+All passwords and hashes in this repository are dummy and self-created, not real user data.
 
-## Ethical Disclaimer
-This project is created **only for academic and learning purposes**.  
-All password hashes used are **self-generated**.  
-No real user data, systems, or accounts were accessed.
+ How It Works
+1️⃣ Generate a Hash (Example)
 
----
+Example password:
 
-## Concepts Covered
-- Password hashing (MD5)
-- Dictionary attack
-- Brute-force (mask) attack
-- Password security and limitations of weak passwords
-- Offline password cracking
+india123
+
+
+Its MD5 hash:
+
+8d763385e0476c5f29c6b4e45d2d8f8d
+
+
+Stored in hash.txt
+
+2️⃣ Prepare Wordlist
+
+wordlist.txt contains possible password guesses, for example:
+
+india
+india123
+password
+admin
+123456
+
+3️ Run Hashcat Command
+hashcat -m 0 -a 0 hash.txt wordlist.txt
+
+
+Where:
+
+-m 0 → MD5 hash mode
+
+-a 0 → Dictionary attack
+
+4️ Show Cracked Password
+hashcat -m 0 --show hash.txt
+
+ Learning Outcomes
+
+Difference between plain text passwords and hashed passwords
+
+Why weak passwords are dangerous
+
+Importance of strong password policies
+
+Ethical use of cybersecurity tools
+
+ Ethical Disclaimer
+
+This repository is intended only for learning and academic purposes.
+
+❌ Do NOT:
+Crack real user passwords
+Attack live systems
+Use this knowledge for illegal activities
+Always practice ethical hacking with permission.
+
+👤 Author
+
+Aditya Kumar Jha
+Cybersecurity & Computer Science Learner
+📍 India
+
+⭐ Final Note
+
+If you are a beginner in cybersecurity, this project will help you understand how password security works in real life — responsibly and legally.
